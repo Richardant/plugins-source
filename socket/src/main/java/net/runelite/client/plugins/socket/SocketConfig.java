@@ -49,7 +49,7 @@ public interface SocketConfig extends Config
 	)
 	default String getSalt()
 	{
-		return "Mat-chan";
+		return UUID.randomUUID().toString().replaceAll("-", "");
 	}
 
 
